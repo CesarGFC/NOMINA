@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{paysheet.name.fullName}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-label>{{"RFC: " + paysheet.rfc}}</ion-label>
+  </ion-card>
+  <ion-card>
+    <ion-label>{{"Nombre: " + paysheet.name.fullName}}</ion-label>
+  </ion-card>
+  <ion-card>
+    <ion-label>{{"Clave: " + paysheet.password}}</ion-label>
+  </ion-card>
+  <ion-card>
+    <ion-label>{{"Salario: " + paysheet.salary}}</ion-label>
+  </ion-card>
+  <ion-card>
+    <ion-label>{{"Tipo: " + paysheet.type}}</ion-label>
+  </ion-card>
+  <ion-card>
+    <ion-label>{{"Estado: " + ((paysheet.active)?"Activo":"Inactivo")}}</ion-label>
+  </ion-card>
+  <ion-card>
+    <ion-label>{{"Correo: " + paysheet.email}}</ion-label>
+  </ion-card>
+  <ion-card>
+    <ion-label>{{"Fecha Inicial: " + paysheet.initialDate}}</ion-label>
+  </ion-card>
+</ion-content>
